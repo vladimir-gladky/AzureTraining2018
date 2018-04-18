@@ -9,6 +9,6 @@
         "VnetSubnet1Prefix": { "value": "172.19.21.0/24" },
         "VnetSubnet2Name": { "value": "Subnet-2" },
         "VnetSubnet2Prefix": { "value": "172.19.22.0/24" },
-        "VnetLocation": { "value": "East US" }
+        "VnetLocation": { "value": "westeurope" }
     }
 }
