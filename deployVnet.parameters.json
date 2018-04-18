@@ -5,9 +5,9 @@
         "VnetDisplayName": { "value": "TestVnet" },
         "VnetName": { "value": "Vnet1" },
         "VnetPrefix": { "value": "172.19.0.0/16" },
-        "VnetSubnet1Name": { "value": "Subnet-1" },
+        "VnetSubnet1Name": { "value": "FEsubnet" },
         "VnetSubnet1Prefix": { "value": "172.19.21.0/24" },
-        "VnetSubnet2Name": { "value": "Subnet-2" },
+        "VnetSubnet2Name": { "value": "BEsubnet" },
         "VnetSubnet2Prefix": { "value": "172.19.22.0/24" },
         "VnetLocation": { "value": "westeurope" }
     }
