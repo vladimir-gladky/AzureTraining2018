@@ -1,5 +1,14 @@
 {
   "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
   "contentVersion": "1.0.0.0",
-  "parameters": {}
+    "parameters": {
+        "VnetDisplayName": { "value": "TestVnet" },
+        "VnetName": { "value": "Vnet1" },
+        "VnetPrefix": { "value": "172.19.0.0/16" },
+        "VnetSubnet1Name": { "value": "Subnet-1" },
+        "VnetSubnet1Prefix": { "value": "172.19.21.0/24" },
+        "VnetSubnet2Name": { "value": "Subnet-2" },
+        "VnetSubnet2Prefix": { "value": "172.19.22.0/24" },
+        "VnetLocation": { "value": "westeurope" }
+    }
 }
