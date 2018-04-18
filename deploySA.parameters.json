@@ -5,6 +5,6 @@
         "SADisplayName": { "value": "TestSA" },
         "SANamePrefix": { "value": "sa" },
         "SAType": { "value": "Standard_LRS" },
-        "SALocation": { "value": "eastus" }
+        "SALocation": { "value": "East US" }
     }
 }
