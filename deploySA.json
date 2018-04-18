@@ -12,8 +12,9 @@
         "Premium_LRS"
       ]
     }},
-  "variables": {
-    "testSAName": "testsa1"},
+    "variables": {
+        "testSAName": "[concat('sa_', uniqueString(resourceGroup().id))]"
+    },
   "resources": [
     {
       "name": "[variables('testSAName')]",
