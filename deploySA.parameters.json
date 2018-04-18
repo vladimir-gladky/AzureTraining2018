@@ -2,6 +2,9 @@
   "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentParameters.json#",
   "contentVersion": "1.0.0.0",
     "parameters": {
-        "testSAType": { "value": "Standard_LRS" }
+        "SADisplayName": { "value": "TestSA" },
+        "SANamePrefix": { "value": "sa" },
+        "SAType": { "value": "Standard_LRS" },
+        "SALocation": { "value": "westeurope" }
     }
 }

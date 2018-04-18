@@ -1,34 +1,44 @@
 {
   "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
   "contentVersion": "1.0.0.0",
-  "parameters": {
-    "testSAType": {
-      "type": "string",
-      "allowedValues": [
-        "Standard_LRS",
-        "Standard_ZRS",
-        "Standard_GRS",
-        "Standard_RAGRS",
-        "Premium_LRS"
-      ]
-    }},
+    "parameters": {
+        "SADisplayName": { "type": "string" },
+        "SANamePrefix": {
+            "type": "string",
+            "defaultValue": "sa"
+        },
+        "SAType": {
+            "type": "string",
+            "allowedValues": [
+                "Standard_LRS",
+                "Standard_ZRS",
+                "Standard_GRS",
+                "Standard_RAGRS",
+                "Premium_LRS"
+            ]
+        },
+        "SALocation": {
+            "type": "string",
+            "defaultValue": "[resourceGroup().location]"
+        }
+    },
     "variables": {
-        "testSAName": "[concat('sa', uniqueString(resourceGroup().id))]"
+        "vSAName": "[concat(parameters('SANamePrefix'), uniqueString(resourceGroup().id))]"
     },
   "resources": [
     {
-      "name": "[variables('testSAName')]",
-      "type": "Microsoft.Storage/storageAccounts",
-      "location": "[resourceGroup().location]",
-      "apiVersion": "2016-01-01",
-      "sku": {
-        "name": "[parameters('testSAType')]"
-      },
-      "dependsOn": [ ],
-      "tags": {
-        "displayName": "testSA"
-      },
-      "kind": "Storage"
+        "name": "[variables('vSAName')]",
+        "type": "Microsoft.Storage/storageAccounts",
+        "location": "[parameters('SALocation')]",
+        "apiVersion": "2016-01-01",
+        "sku": {
+            "name": "[parameters('SAType')]"
+        },
+        "dependsOn": [],
+        "tags": {
+            "displayName": "[parameters('SADisplayName')]"
+        },
+        "kind": "Storage"
     }],
   "outputs": {}
 }
