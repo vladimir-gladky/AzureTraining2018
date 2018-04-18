@@ -13,7 +13,7 @@
       ]
     }},
   "variables": {
-    "testSAName": "testsa"},
+    "testSAName": "testsa1"},
   "resources": [
     {
       "name": "[variables('testSAName')]",
