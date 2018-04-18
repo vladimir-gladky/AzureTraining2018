@@ -14,13 +14,13 @@
             "defaultValue": "[resourceGroup().location]"
         }
     },
-  "variables": {
+    "variables": {},
   "resources": [
     {
         "name": "Vnet1",
         "type": "Microsoft.Network/virtualNetworks",
         "location": "[parameters('VnetLocation')]",
-        "apiVersion": "2016-03-30",
+        "apiVersion": "2018-02-01",
         "dependsOn": [],
         "tags": {
             "displayName": "[parameters('VnetDisplayName')]"
