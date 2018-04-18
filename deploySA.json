@@ -1,6 +1,6 @@
 {
-  "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
-  "contentVersion": "1.0.0.0",
+    "$schema": "https://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
     "parameters": {
         "SADisplayName": { "type": "string" },
         "SANamePrefix": {
@@ -25,7 +25,7 @@
     "variables": {
         "vSAName": "[concat(parameters('SANamePrefix'), uniqueString(resourceGroup().id))]"
     },
-  "resources": [
+    "resources": [
     {
         "name": "[variables('vSAName')]",
         "type": "Microsoft.Storage/storageAccounts",
@@ -40,5 +40,5 @@
         },
         "kind": "Storage"
     }],
-  "outputs": {}
+    "outputs": {}
 }
