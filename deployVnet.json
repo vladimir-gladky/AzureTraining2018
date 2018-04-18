@@ -3,11 +3,11 @@
   "contentVersion": "1.0.0.0",
   "parameters": {},
   "variables": {
-    "Vnet1Prefix": "10.0.0.0/16",
+    "Vnet1Prefix": "172.21.0.0/16",
     "Vnet1Subnet1Name": "Subnet-1",
-    "Vnet1Subnet1Prefix": "10.0.0.0/24",
+    "Vnet1Subnet1Prefix": "172.21.1.0/24",
     "Vnet1Subnet2Name": "Subnet-2",
-    "Vnet1Subnet2Prefix": "10.0.1.0/24"},
+    "Vnet1Subnet2Prefix": "172.21.2.0/24"},
   "resources": [
     {
       "name": "Vnet1",
