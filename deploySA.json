@@ -13,7 +13,7 @@
       ]
     }},
     "variables": {
-        "testSAName": "[concat('sa_', uniqueString(resourceGroup().id))]"
+        "testSAName": "[concat('sa', uniqueString(resourceGroup().id))]"
     },
   "resources": [
     {
