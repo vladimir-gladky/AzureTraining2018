@@ -14,7 +14,7 @@
       ]
     }},
   "variables": {
-    "testSAName": "[concat('testSA', uniqueString(resourceGroup().id))]"},
+    "testSAName": "testSA"},
   "resources": [
     {
       "name": "[variables('testSAName')]",
